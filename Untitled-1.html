@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Transport Management Website</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  
+  <title>Scientific Calculator</title>
+  <style>
+    .calculator {
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+      text-align: center;
+    }
+    .calculator input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .calculator button {
+      width: 48%;
+      padding: 10px;
+      margin: 5px;
+      font-size: 18px;
+    }
+  </style>
 </head>
 <body>
-   
-  <header>
-    <nav>
-      <h1>Transport Management</h1>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <button onclick="clearResult()">C</button>
+    <button onclick="appendValue('(')">(</button>
+    <button onclick="appendValue(')')">)</button>
+    <button onclick="appendValue('/')">/</button>
+    <button onclick="appendValue('7')">7</button>
+    <button onclick="appendValue('8')">8</button>
+    <button onclick="appendValue('9')">9</button>
+    <button onclick="appendValue('*')">*</button>
+    <button onclick="appendValue('4')">4</button>
+    <button onclick="appendValue('5')">5</button>
+    <button onclick="appendValue('6')">6</button>
+    <button onclick="appendValue('-')">-</button>
+    <button onclick="appendValue('1')">1</button>
+    <button onclick="appendValue('2')">2</button>
+    <button onclick="appendValue('3')">3</button>
+    <button onclick="appendValue('+')">+</button>
+    <button onclick="appendValue('0')">0</button>
+    <button onclick="appendValue('.')">.</button>
+    <button onclick="calculate()">=</button>
+  </div>
 
-  <section id="hero">
-    <div class="hero-content">
-      <h2>Welcome to our Transport Management Website</h2>
-      <p>We provide efficient and reliable transportation services to meet your logistics needs.</p>
-      <a href="#" class="btn">Learn More</a>
-    </div>
-  </section>
-
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service">
-      <img src="service1.jpg" alt="Service 1">
-      <h3>Freight Transportation</h3>
-      <p>We offer secure and timely freight transportation services to deliver your goods anywhere.</p>
-    </div>
-    <div class="service">
-      <img src="service2.jpg" alt="Service 2">
-      <h3>Warehousing</h3>
-      <p>Our state-of-the-art warehouses ensure the safe storage and management of your inventory.</p>
-    </div>
-    <div class="service">
-      <img src="service3.jpg" alt="Service 3">
-      <h3>Customs Clearance</h3>
-      <p>We handle all customs procedures to ensure smooth and hassle-free import and export processes.</p>
-    </div>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are a leading transport management company dedicated to providing excellent logistics solutions. With a team of experienced professionals and a strong network of partners, we ensure the efficient and reliable movement of goods. Our commitment to customer satisfaction and innovation sets us apart in the industry.</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2023 Transport Management. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-  
+  <script>
+    function appendValue(value) {
+      document.getElementById("result").value += value;
+    }
+    
+    function calculate() {
+      var result = eval(document.getElementById("result").value);
+      document.getElementById("result").value = result;
+    }
+    
+    function clearResult() {
+      document.getElementById("result").value = "";
+    }
+  </script>
 </body>
 </html>
