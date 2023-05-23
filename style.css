@@ -9,6 +9,7 @@ body, h1, h2, h3, p, ul, li, form, input, textarea {
   body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
+    background-color: black;
   }
   
   header {
@@ -41,6 +42,7 @@ body, h1, h2, h3, p, ul, li, form, input, textarea {
   
   h1, h2, h3 {
     margin-bottom: 10px;
+    color: lightblue;
   }
   
   img {
