@@ -1,0 +1,33 @@
+{
+  "home": {
+    "title": "Welcome to My Portfolio",
+    "description": "Hi, I'm [Your Name]. I am a [Your Profession] passionate about [Your Expertise]."
+  },
+  "about": {
+    "title": "About Me",
+    "image": "profile.jpg",
+    "description": "I am a [Your Profession] with [X] years of experience in [Your Field]. I specialize in [Your Expertise]. I have a strong passion for [Specific Interests]. I have worked with clients from various industries and delivered successful projects."
+  },
+  "projects": {
+    "title": "My Projects",
+    "projectList": [
+      {
+        "image": "project1.jpg",
+        "title": "Project 1",
+        "description": "Description of the project goes here. Highlight the key features and achievements."
+      },
+      {
+        "image": "project2.jpg",
+        "title": "Project 2",
+        "description": "Description of the project goes here. Highlight the key features and achievements."
+      }
+      /* Add more projects as needed */
+    ]
+  },
+  "contact": {
+    "title": "Contact Me"
+  },
+  "footer": {
+    "text": "&copy; 2023 My Portfolio. All rights reserved."
+  }
+}

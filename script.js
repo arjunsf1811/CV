@@ -1,30 +1,45 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Smooth scrolling for navigation links
-  const navLinks = document.querySelectorAll('nav ul li a');
-  
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = link.getAttribute('href');
-      const targetElement = document.querySelector(targetId);
-      targetElement.scrollIntoView({ behavior: 'smooth' });
-    });
+    // Fetch JSON data
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        // Update Home section
+        const homeSection = document.querySelector('#home');
+        homeSection.querySelector('h1').textContent = data.home.title;
+        homeSection.querySelector('p').textContent = data.home.description;
+        
+        // Update About section
+        const aboutSection = document.querySelector('#about');
+        aboutSection.querySelector('h2').textContent = data.about.title;
+        aboutSection.querySelector('img').setAttribute('src', data.about.image);
+        aboutSection.querySelector('p').textContent = data.about.description;
+        
+        // Update Projects section
+        const projectsSection = document.querySelector('#projects');
+        projectsSection.querySelector('h2').textContent = data.projects.title;
+        
+        const projectList = projectsSection.querySelector('.project-list');
+        data.projects.projectList.forEach(project => {
+          const projectDiv = document.createElement('div');
+          projectDiv.classList.add('project');
+          projectDiv.innerHTML = `
+            <img src="${project.image}" alt="${project.title}">
+            <h3>${project.title}</h3>
+            <p>${project.description}</p>
+          `;
+          projectList.appendChild(projectDiv);
+        });
+        
+        // Update Contact section
+        const contactSection = document.querySelector('#contact');
+        contactSection.querySelector('h2').textContent = data.contact.title;
+        
+        // Update Footer
+        const footer = document.querySelector('footer');
+        footer.querySelector('p').innerHTML = data.footer.text;
+      })
+      .catch(error => {
+        console.error('Error fetching JSON data:', error);
+      });
   });
   
-  // Form submission handling
-  const form = document.querySelector('form');
-  
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Perform form validation and submission logic here
-    // Example code to display a success message
-    const successMessage = document.createElement('p');
-    successMessage.textContent = 'Message sent successfully!';
-    successMessage.style.color = 'green';
-    form.appendChild(successMessage);
-    
-    // Clear form inputs after submission
-    form.reset();
-  });
-});
