@@ -1,135 +1,52 @@
-==================================================================================================
+# My Portfolio Website
 
-DESCRIPTION:
+This is my personal portfolio website showcasing my skills, projects, and contact information. The website is designed to provide visitors with an overview of my professional background and accomplishments.
 
-EPITOME is a beautifully crafted free resume and personal portfolio website template. It is modern, 
-trendy and features a visually attractive design. An ideal website template for creative 
-professionals and freelancers who want to create an online presence that would stand out from 
-the average. Epitome has all the important elements of an effective resume personal portfolio 
-website template: an awesome fullscreen hero banner, about and qualification section, services, 
-portfolio, testimonial and contact section. Epitome is also mobile and retina ready. 
-It will look great on any devices from mobile to desktop and on any screen resolutions.
+## Table of Contents
 
-==================================================================================================
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Introduction
 
-LICENSE:
+Welcome to my portfolio website! This website serves as a digital resume and showcases my work in the field of [Your Profession]. It provides a glimpse into my professional journey, skills, and projects.
 
-This free resource is provided by Styleshout.com and is free to use in 
-both personal and commercial projects.
+## Features
 
+- Home section with a brief introduction and welcome message.
+- About Me section that highlights my professional background, expertise, and interests.
+- Projects section showcasing my notable projects, along with descriptions and images.
+- Contact Me section with a contact form to get in touch with me.
+- Responsive design to ensure optimal viewing experience across devices.
 
-Rights:
--------
+## Technologies Used
 
-You are permitted to use this free resource in any number of personal and commercial projects for 
-yourself or a client. You may modify the resource according to your requirements and include them 
-in your projects under the following condition - you MUST give appropriate credit, provide an 
-attribution link to styleshout.com.
+- HTML5
+- CSS3
+- JavaScript
 
+## Usage
 
-Prohibitions:
--------------
+To use or modify this portfolio website for your own purposes, follow these steps:
 
-You are not permitted to resell or redistribute(even for free) the resource "as is" without 
-prior consent. If you would like to republish or promote this resource on your site, please 
-link back to the appropriate resource page on styleshout.com where users can find the download 
-and not directly to the download zip file.
+1. Clone this repository to your local machine.
+2. Open the `index.html` file in your web browser to view the website.
+3. Customize the content in the HTML file to reflect your own information.
+4. Replace the images in the `img` folder with your own project images.
+5. Update the styles in the `style.css` file to match your desired design.
+6. Add any additional sections or pages as needed.
 
+Feel free to customize the website according to your preferences and needs. Remember to test the website across different devices and browsers to ensure proper functionality and responsiveness.
 
-Attribution: 
-------------
+## Contributing
 
-You must include a credit link to our website(https://www.styleshout.com) somewhere on your site. 
-We prefer the footer credit that comes with the template but you are still free to move it 
-somewhere else.
+Contributions to enhance the functionality or design of this portfolio website are welcome. If you have any suggestions, improvements, or bug fixes, please open an issue or submit a pull request with your proposed changes.
 
+## License
 
-
-If you have any questions about the License, feel free to contact us.
-
-
------------------------------------------------------------------------------------------------------
-
-
-REMOVING THE ATTRIBUTION LINK:
-
-We understand that there are situations where you want to use our templates without 
-the crediting obligation. If that's your case, you can always send us a 
-credit removal fee of 10 USD through Paypal. This will allow you to use a single 
-template attribution/credit link free on ONE DOMAIN name.
-
-You can send your payments through Paypal to this address: ealigam@gmail.com or
-visit our attribution removal page: https://www.styleshout.com/attribution-free/ 
-and click the pay button on the page.
-
-If possible, kindly send us the site's url where the template is being used. 
-Also, keep your Paypal receipt as proof of payment and your good to go.
-
-
------------------------------------------------------------------------------------------------------- 
-
-
-SUPPORT:
-    
-Since EPITOME is distributed for free, support is not offered. EPITOME is coded according 
-to current web standards and we did our best to make the template easy to use and modify.
-If you have minimum web development experience, you can easily modify the template. 
-However, If you're still new to HTML and CSS, I suggest that you visit the 
-following tutorials:
-
- - https://webdesign.tutsplus.com/courses/30-days-to-learn-html-css
- - http://learn.shayhowe.com/html-css/
-
-These will teach you the essentials of HTML and CSS. In addition, if you want to include
-jQuery in your skill-set, you can also check out these tutorials: 
-
- - https://code.tutsplus.com/courses/30-days-to-learn-jquery
- - http://try.jquery.com/
-
-
------------------------------------------------------------------------------------------------------- 
-
-
-GET THE LATEST VERSION:
-
-We update our templates on a regular basis so to make sure that you have the latest version, 
-always download the template files directly on our website(https://www.styleshout.com/)
-
-
-
--------------------------------------------------------------------------------------------------------
-
-
-SOURCES AND CREDITS:
-
-I've used the following resources as listed.
-
-Fonts:
- - Lora Font (https://fonts.google.com/specimen/Lora)
- - Roboto Font (https://fonts.google.com/specimen/Roboto) 
- - Frank Ruhl Libre Font (https://fonts.google.com/specimen/Frank+Ruhl+Libre)
-
-Icons:
- - Font Awesome (https://fontawesome.com/)
- - Iconmonstr (https://iconmonstr.com/)
- 
-
-Stock Photos and Graphics:
- - Unsplash.com (https://unsplash.com/)
- 
-Javascript Files:
- - JQuery (http://jquery.com/)
- - Modernizr (http://modernizr.com/)
- - Masonry JS (https://masonry.desandro.com/)
- - ImagesLoaded (https://imagesloaded.desandro.com/)
- - Slick slider (http://kenwheeler.github.io/slick/)
- - Animate On Scroll (https://michalsnik.github.io/aos/)
- - Pace JS (https://github.hubspot.com/pace/docs/welcome/)
-
--------------------------------------------------------------------------------------------------------
-
-
-Thanks for downloading from Styleshout :)
-
+This project is licensed under the [MIT License](LICENSE). You are free to modify and use this portfolio website for personal or commercial purposes.
 
